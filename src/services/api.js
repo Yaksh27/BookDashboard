@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-// CRUDCRUD.com base URL - Replace 'your-unique-id' with your actual CRUDCRUD ID
+// CRUDCRUD.com base url
 const BASE_URL = 'https://crudcrud.com/api/f4d36589b8414bbb8f13297c2fd41880';
 
-// Create axios instance with default config
+
 const api = axios.create({
   baseURL: BASE_URL,
   timeout: 10000,
@@ -12,7 +12,7 @@ const api = axios.create({
   },
 });
 
-// API functions for CRUD operations
+// API functions for crud operations
 export const booksAPI = {
   // Get all books
   getBooks: async () => {
